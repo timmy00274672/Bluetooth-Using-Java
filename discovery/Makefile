@@ -1,4 +1,4 @@
-classesDir: classes
+classesDir: 
 	mkdir -p classes
 
 build: src/RemoteDeviceDiscovery.java classesDir
