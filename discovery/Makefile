@@ -13,5 +13,13 @@ putClient:
 putServer:
 	java -cp classes/:../jars/bluecove-2.1.0.jar:../jars/bluecove-gpl-2.1.0.jar OBEXPutServer	
 
+serviceSearch:
+	java -cp classes/:../jars/bluecove-2.1.0.jar:../jars/bluecove-gpl-2.1.0.jar ServicesSearch	
+
+connectToServerExample:
+	@read -p "Enter  URL:" url; \
+	java -cp classes/:../jars/bluecove-2.1.0.jar:../jars/bluecove-gpl-2.1.0.jar ObexPutClient $$url
+
+
 clean:
 	rm -rf classes/*
